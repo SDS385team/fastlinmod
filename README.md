@@ -1,0 +1,2 @@
+# fastlinmod
+Fast Implementation of

@@ -6,9 +6,8 @@ using namespace Rcpp;
 using namespace arma;
 
 //' @title Sigmoid function with truncation
-//' @param
-//'   u: numeric vector of input
-//'   eps: real number of truncation paramaeter if output is close to 0/1 
+//' @param u: numeric vector of input
+//' @param eps: real number of truncation paramaeter if output is close to 0/1 
 //' @return sigmoid evaluate at input u with truncation
 //' @export
 // [[Rcpp::export]]
@@ -30,11 +29,10 @@ arma::vec sigmoid(const arma::vec & u,
 
 
 //' @title Negative LogLikelihood of Binomial GLM
-//' @param
-//'   beta: numeric vector of parameters of linear model
-//'   X: numeric matrix with predictor variables
-//'   y: numeric vector with response variable
-//'   m: integer controlling the max number of successes in binomial response y
+//' @param beta: numeric vector of parameters of linear model
+//' @param X: numeric matrix with predictor variables
+//' @param y: numeric vector with response variable
+//' @param m: integer controlling the max number of successes in binomial response y
 //' @return the negative loglikelihood evaluated at the input
 //' @export
 // [[Rcpp::export]]
